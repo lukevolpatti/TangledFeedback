@@ -1,0 +1,27 @@
+
+.title{
+	text-align: center;
+}
+
+#mainTitle{
+	font-size: 8em;
+}
+
+@media screen and (min-width: 800px){
+	._25{
+		flex: 2.5;
+	}
+	._50{
+		flex: 5.0;
+	}
+	._75{
+		flex: 7.5;
+	}
+}
+
+.cover-photo img{
+	width: 100%;
+	height: 100;
+	max-width: 200px;
+	max-height: 200px;
+}2
