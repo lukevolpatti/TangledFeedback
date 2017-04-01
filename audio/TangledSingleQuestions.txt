@@ -1,0 +1,12 @@
+#1. Was this your first exhibit at Tangled Art Gallery?
+/:	Yes			No
+#2.	How would you rate accessibility at this event?
+/:	Excellent 		Very Good 	Good		Fair		Poor
+#3.	How would you rate your knowledge of disability arts before this event?
+/: 	Excellent		Very Good		Good 	Fair		Poor
+#4.	How would you rate your knowledge of disability arts after this event?
+/:	Excellent		Very Good		Good		Fair		Poor
+#5.	Do you identify with any of the following communities? 
+/:Disability, Deaf, Mad, mental health consumer, LGBTTIQQ2S, Black, Indigenous, People of Colour, Senior, Youth (18 – 25)
+#6.	Which aspects of this event were most valuable to you?
+#7.	Comments
