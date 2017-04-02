@@ -10,6 +10,24 @@ body{
 
 #mainTitle{
 	font-size: 4em;
+	margin-bottom: 5vh;
+}
+
+.question{
+	margin-bottom: 5vh;
+	margin-left: 6vh;
+}
+
+label {
+    font-weight: normal !important;
+}
+
+.longquestion{
+	margin-bottom: 5vh;
+}
+
+.btn{
+	font-size: 5vh;
 }
 
 @media screen and (min-width: 800px){

@@ -12,15 +12,19 @@
 		<h1 id="mainTitle">Tangled Art Gallery Feedback</h1>
 	</div>
 	<form>
-		<p>1. Was this your first exhibit at Tangled Art Gallery?</p>
-		<div class="radio">
+		
+    <p>1. Was this your first exhibit at Tangled Art Gallery?</p>
+		<div class="question">
+    <div class="radio">
   			<label><input type="radio" name="optradio">Yes</label>
 		</div>
 		<div class="radio">
   			<label><input type="radio" name="optradio">No</label>
 		</div>
+    </div>
 
 		<p>2. How would you rate the accessibility of this event?</p>
+    <div class="question">
 		<div class="radio">
   			<label><input type="radio" name="optradio">Excellent</label>
 		</div>
@@ -32,12 +36,14 @@
 		</div>
 		<div class="radio">
   			<label><input type="radio" name="optradio">Fair</label>
-		</div
-		<div class="radio">
-  			<label><input type="radio" name="optradio">Poor</label>
 		</div>
+    <div class="radio">
+        <label><input type="radio" name="optradio">Fair</label>
+    </div>
+    </div>
 
 		<p>3. How would you rate your knowledge of disability arts before this event?</p>
+    <div class="question">
 		<div class="radio">
   			<label><input type="radio" name="optradio">Excellent</label>
 		</div>
@@ -49,12 +55,14 @@
 		</div>
 		<div class="radio">
   			<label><input type="radio" name="optradio">Fair</label>
-		</div
+		</div>
 		<div class="radio">
   			<label><input type="radio" name="optradio">Poor</label>
 		</div>
+    </div>
 
 		<p>4. How would you rate your knowledge of disability arts after this event?</p>
+    <div class="question">
 		<div class="radio">
   			<label><input type="radio" name="optradio">Excellent</label>
 		</div>
@@ -66,57 +74,72 @@
 		</div>
 		<div class="radio">
   			<label><input type="radio" name="optradio">Fair</label>
-		</div
+		</div>
 		<div class="radio">
   			<label><input type="radio" name="optradio">Poor</label>
 		</div>
+    </div>
 
 		<p>5. Do you identify with any of the following communities?</p>
+    <div class="question">
 		<div class="form-check">
-          <label class="form-check-label">
-            <input class="form-check-input" type="checkbox"> Disability
-          </label>
-        </div>
-        <div class="form-check">
-          <label class="form-check-label">
-            <input class="form-check-input" type="checkbox"> Deaf
-          </label>
-        </div>
-        <div class="form-check">
-          <label class="form-check-label">
-            <input class="form-check-input" type="checkbox"> Mad, mental health consumer
-          </label>
-        </div>
-        <div class="form-check">
-          <label class="form-check-label">
-            <input class="form-check-input" type="checkbox"> LBGTTIQQ2S
-          </label>
-        </div>
-        <div class="form-check">
-          <label class="form-check-label">
-            <input class="form-check-input" type="checkbox"> Black
-          </label>
-        </div>
-        <div class="form-check">
-          <label class="form-check-label">
-            <input class="form-check-input" type="checkbox"> Indigenous
-          </label>
-        </div>
-        <div class="form-check">
-          <label class="form-check-label">
-            <input class="form-check-input" type="checkbox"> People of Colour
-          </label>
-        </div>
-        <div class="form-check">
-          <label class="form-check-label">
-            <input class="form-check-input" type="checkbox"> Senior
-          </label>
-        </div>
-        <div class="form-check">
-          <label class="form-check-label">
-            <input class="form-check-input" type="checkbox"> Youth (18-25)
-          </label>
-        </div>
+      <label class="form-check-label">
+          <input class="form-check-input" type="checkbox"> Disability
+      </label>
+    </div>
+    <div class="form-check">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox"> Deaf
+      </label>
+    </div>
+    <div class="form-check">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox"> Mad, mental health consumer
+      </label>
+    </div>
+    <div class="form-check">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox"> LBGTTIQQ2S
+      </label>
+    </div>
+    <div class="form-check">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox"> Black
+      </label>
+    </div>
+    <div class="form-check">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox"> Indigenous
+      </label>
+    </div>
+    <div class="form-check">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox"> People of Colour
+      </label>
+    </div>
+    <div class="form-check">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox"> Senior
+      </label>
+    </div>
+    <div class="form-check">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox"> Youth (18-25)
+      </label>
+    </div>
+    </div>
+
+    <div class="form-group longquestion">
+      <label for="exampleTextarea">6. Which aspects of this event were most valuable to you?</label>
+      <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+    </div>
+
+    <div class="form-group longquestion">
+      <label for="exampleTextarea">7. Comments</label>
+      <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
 
 	</form>
 </body>
