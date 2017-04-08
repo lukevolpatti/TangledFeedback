@@ -1,0 +1,7 @@
+#1. Est-ce votre première visite chez la galerie Tangled? Oui/Non
+#2. Comment décririez-vous l‘accessibilité de cet événement? Excellent/très bien/bien/moyen/mauvais
+#3. Comment décririez-vous votre connaissance des arts invalidités avant cet événement?Excellent/très bien/bien/moyen/mauvais
+#4Comment décririez-vous votre connaissance des arts invalidités après cet événement? Excellent/très bien/bien/moyen/mauvais
+ #5. Parmi quelles des suivantes communautés identifiez-vous? Invalide/Sourd/trouble psychique/LGBTTIQQ2S/Noir/Indigène/personnes de colour/personne âgé/jeunesse
+#6. Quels aspects de cet événement avez-vous aimé? 
+#7. Commentaires
