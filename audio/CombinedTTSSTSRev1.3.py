@@ -2,6 +2,7 @@
 from gtts import gTTS
 import os
 import playsound
+import winsound
 
 #Change the file name depending on the name of the textfile where the questions are stored.
 filenameRaw = "TangledSingleQuestions"
@@ -13,6 +14,19 @@ import time
 import string
 import speech_recognition as sr
 from pygame import mixer
+
+#Creating English Error message
+
+tts5 = gTTS(text = "An error has occurred.", lang = 'en')
+audioErrEn = "ErrEn.mp3"
+tts5.save(audioErrEn)
+
+def enError():
+        mixer.init()
+        mixer.music.load(audioErrEn)
+        print("An error has occurred.")
+        mixer.music.play()
+        time.sleep(3)
 
 #Reading the English language selection file
 
@@ -50,9 +64,11 @@ while j < 1:
         mixer.init()
         mixer.music.load(audioFr)
         mixer.music.play()
-        time.sleep(8)
+        time.sleep(5)
         
         print("Microphone on")
+        winsound.Beep(440, 250) # frequency, duration
+        time.sleep(0.25)        # in seconds (0.25 is 250ms)
         aud = r.listen(source)
         print("Done")
 
@@ -69,6 +85,7 @@ while j < 1:
         mixer.music.load(audioErr)
         mixer.music.play()
         time.sleep(5)
+        enError()
         err1 = gTTS(text = "Il y a eu une erreur.", lang = 'fr')
         audioErr = "err1.mp3"
         err1.save(audioErr)
@@ -81,13 +98,14 @@ while j < 1:
     except sr.RequestError as e:
         print("Could not request results from Google Speech Recognition service; {0}".format(e))
         #if there is an error need to return to top without an increment
-        err = gTTS(text = "Could not request results from Google Speech Recognition service", lang = 'en')
-        audioErr = "err.mp3"
+        err66 = gTTS(text = "Could not request results from Google Speech Recognition service", lang = 'en')
+        audioErr = "err66.mp3"
         err.save(audioErr)
         mixer.init()
         mixer.music.load(audioErr)
         mixer.music.play()
         time.sleep(5)
+        enError()
         err2 = gTTS(text = "Il y a eu une erreur.", lang = 'fr')
         audioErr = "err2.mp3"
         err2.save(audioErr)
@@ -266,11 +284,13 @@ else:
                 print("Your Answer here: " + r.recognize_google(aud))
             except sr.UnknownValueError:
                 print("Google Speech Recognition could not understand audio")
+                enError()
                 #if there is an error need to return to top without an increment
                 continue
             except sr.RequestError as e:
                 print("Could not request results from Google Speech Recognition service; {0}".format(e))
                 #if there is an error need to return to top without an increment
+                enError()
                 continue
             #marks the answer to question for collection purposes
             t = ','   
