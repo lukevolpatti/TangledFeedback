@@ -1,5 +1,6 @@
 #The following script reads from a single text file containing all of the questions contained in the Tangled Arts Gallery survey.  Please enter the name of the file under the variable filenameRaw and save this file in the same directory as this python script.
 #Please do not overuse French option: Daily limit of 1,000,000 characters and 10,000,000 characters per month
+#pip install yandex.translate
 from gtts import gTTS
 import os
 import playsound
